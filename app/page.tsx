@@ -17,6 +17,8 @@ import GlitchHeader from "@/components/ui/GlitchHeader";
 import BootSequence from "@/components/ui/BootSequence";
 import LiveMetrics from "@/components/ui/LiveMetrics";
 import InteractiveCLI from "@/components/ui/InteractiveCLI";
+import SystemAlertMarquee from "@/components/ui/SystemAlertMarquee";
+import DecryptText from "@/components/ui/DecryptText";
 import { useCyberAudio } from "@/hooks/useCyberAudio";
 
 const NavCard = ({ 
@@ -56,7 +58,7 @@ const NavCard = ({
                 {subtitle}
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tighter uppercase md:group-hover:text-[#00FF41] transition-colors">
-                {title}
+                <DecryptText text={title} delay={delay + 0.5} />
               </h2>
             </div>
             <div className="bg-white/5 p-2 border border-white/10 md:group-hover:border-[#00FF41]/30 transition-all">
@@ -107,15 +109,18 @@ export default function Home() {
             >
               <div className="flex items-center gap-2">
                 <Activity className="w-3 h-3 text-[#00FF41]" />
-                MAINFRAME_HUB_ACTIVE
+                <DecryptText text="MAINFRAME_HUB_ACTIVE" />
               </div>
               <span className="hidden md:inline text-white/10">|</span>
               <div className="flex items-center gap-2">
                 <Lock className="w-3 h-3 text-[#FF003C]" />
-                SECURE_SESSION_v4.0.2
+                <DecryptText text="SECURE_SESSION_v4.0.2" delay={0.2} />
               </div>
             </motion.div>
           </section>
+
+          {/* System Alert Marquee */}
+          <SystemAlertMarquee />
 
           {/* Middle Section: Responsive Bento Box Navigation Grid */}
           <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-fr">
