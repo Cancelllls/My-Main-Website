@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Mono } from "next/font/google";
 import { cn } from "@/lib/utils";
+import CustomCursor from "@/components/ui/CustomCursor";
 import "./globals.css";
 
 const geistMono = Geist_Mono({
@@ -22,8 +23,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(
         geistMono.variable,
-        "bg-[#050505] text-white antialiased selection:bg-[#00FF41] selection:text-black font-mono"
+        "bg-[#050505] text-white antialiased selection:bg-[#00FF41] selection:text-black font-mono cursor-none"
       )}>
+        <CustomCursor />
         <div className="crt-overlay" aria-hidden="true" />
         <div className="noise" aria-hidden="true" />
         <main className="relative z-10 min-h-screen">
