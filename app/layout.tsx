@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import AnimatedBackground from "@/components/ui/AnimatedBackground";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { Navbar } from "@/components/ui/Navbar";
 import "./globals.css";
 
 const inter = Inter({
@@ -20,15 +22,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={cn(
         inter.variable,
-        "bg-[#0a0a0a] text-[#ededed] antialiased font-sans selection:bg-blue-500/30"
+        "bg-white dark:bg-[#0a0a0a] text-gray-900 dark:text-[#ededed] antialiased font-sans selection:bg-blue-500/30 transition-colors"
       )}>
-        <AnimatedBackground />
-        <main className="relative z-10 min-h-screen">
-          {children}
-        </main>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          <AnimatedBackground />
+          <Navbar />
+          <main className="relative z-10 min-h-screen">
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
