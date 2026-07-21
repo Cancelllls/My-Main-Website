@@ -185,7 +185,7 @@ export default function Home() {
                 Start a Project <ArrowRight className="w-5 h-5" />
               </Link>
               <Link 
-                href="/work" 
+                href="/mywork" 
                 className="w-full sm:w-auto px-10 py-5 bg-white dark:bg-[#111] border-2 border-gray-200 dark:border-[#333] text-gray-900 dark:text-white font-semibold rounded-full hover:bg-gray-50 dark:hover:bg-[#222] hover:scale-105 transition-all flex items-center justify-center gap-2 shadow-lg text-lg group"
               >
                 <Code2 className="w-5 h-5 text-gray-400 group-hover:text-blue-500 transition-colors" /> View My Work
@@ -320,7 +320,7 @@ export default function Home() {
                   <p className="text-xl text-gray-200 max-w-2xl mb-10 font-light">
                     An advanced cryptocurrency algorithmic trading engine with a real-time analytics dashboard and Bayesian Optimization tuning.
                   </p>
-                  <Link href="/work" className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition-colors flex items-center gap-3">
+                  <Link href="/mywork" className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition-colors flex items-center gap-3">
                     Read Case Study <ArrowRight className="w-5 h-5" />
                   </Link>
                 </div>
