@@ -44,7 +44,7 @@ export default function PortfolioPage() {
             style={{ y }} 
             className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20 dark:opacity-40 mix-blend-luminosity"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent dark:from-[#0a0a0a] dark:via-transparent dark:to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent dark:from-[#121212] dark:via-transparent dark:to-transparent" />
           
           <div className="absolute bottom-10 left-10 right-10">
             <div className="flex flex-wrap gap-3 mb-4">
@@ -131,7 +131,7 @@ export default function PortfolioPage() {
           className="relative w-full h-[400px] md:h-[500px] rounded-3xl overflow-hidden mb-16 bg-gray-100 dark:bg-[#111] border border-gray-200 dark:border-[#222] shadow-xl"
         >
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop')] bg-cover bg-center opacity-20 dark:opacity-40 mix-blend-luminosity" />
-          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent dark:from-[#0a0a0a] dark:via-transparent dark:to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent dark:from-[#121212] dark:via-transparent dark:to-transparent" />
           
           <div className="absolute bottom-10 left-10 right-10">
             <div className="flex flex-wrap gap-3 mb-4">

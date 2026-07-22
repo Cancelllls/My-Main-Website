@@ -195,7 +195,7 @@ export default function Home() {
         </section>
 
         {/* Quick Stats Section */}
-        <section className="py-12 border-y border-gray-200 dark:border-[#222] bg-white/30 dark:bg-[#0a0a0a]/30 backdrop-blur-xl relative z-20">
+        <section className="py-12 border-y border-gray-200 dark:border-[#222] bg-white/30 dark:bg-[#121212]/30 backdrop-blur-xl relative z-20">
           <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-200 dark:divide-[#222]">
             <FadeIn delay={0.1}>
               <div className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white mb-2">5+</div>
@@ -346,7 +346,7 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer id="contact" className="py-16 border-t border-gray-200 dark:border-[#222] bg-white/80 dark:bg-[#0a0a0a]/80 backdrop-blur-xl relative z-20">
+        <footer id="contact" className="py-16 border-t border-gray-200 dark:border-[#222] bg-white/80 dark:bg-[#121212]/80 backdrop-blur-xl relative z-20">
           <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex items-center gap-3">
               <LogoSVG className="w-8 h-8" />

@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={cn(
         inter.variable,
-        "bg-white dark:bg-[#0a0a0a] text-gray-900 dark:text-[#ededed] antialiased font-sans selection:bg-blue-500/30 transition-colors"
+        "bg-white dark:bg-[#121212] text-gray-900 dark:text-gray-200 antialiased font-sans selection:bg-blue-500/30 transition-colors"
       )}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <LoadingScreen>

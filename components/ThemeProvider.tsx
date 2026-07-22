@@ -7,13 +7,13 @@ import type { ThemeProviderProps } from "next-themes";
 function ThemeCookieSync() {
   const { theme, setTheme } = useTheme();
   
-  // Sync from cookie on mount if it differs
+  // Sync from cookie on mount ONLY
   React.useEffect(() => {
     const match = document.cookie.match(new RegExp('(^| )theme=([^;]+)'));
-    if (match && match[2] !== theme && (match[2] === 'light' || match[2] === 'dark')) {
+    if (match && (match[2] === 'light' || match[2] === 'dark')) {
       setTheme(match[2]);
     }
-  }, [theme, setTheme]);
+  }, []); // Run only once on mount to prevent infinite loop
 
   // Sync to cookie on theme change
   React.useEffect(() => {

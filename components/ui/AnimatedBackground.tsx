@@ -12,12 +12,12 @@ export default function AnimatedBackground() {
     setMounted(true);
   }, []);
 
-  if (!mounted) return <div className="fixed inset-0 z-0 bg-white dark:bg-[#0a0a0a]" />;
+  if (!mounted) return <div className="fixed inset-0 z-0 bg-white dark:bg-[#121212]" />;
 
   const isDark = resolvedTheme === "dark";
 
   return (
-    <div className="fixed inset-0 z-0 overflow-hidden bg-white dark:bg-[#0a0a0a] pointer-events-none transition-colors duration-700">
+    <div className="fixed inset-0 z-0 overflow-hidden bg-white dark:bg-[#121212] pointer-events-none transition-colors duration-700">
       {/* Dynamic Grid Background */}
       <div 
         className="absolute inset-0 opacity-[0.03] dark:opacity-[0.03]"
